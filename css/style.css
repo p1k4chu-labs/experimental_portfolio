@@ -106,10 +106,10 @@ header .container {
 
 @keyframes text-glow {
     from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px var(--accent-color), 0 0 40px var(--accent-color), 0 0 50px var(--accent-color), 0 0 60px var(--accent-color), 0 0 70px var(--accent-color);
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--accent-color), 0 0 20px var(--accent-color);
     }
     to {
-        text-shadow: 0 0 20px #fff, 0 0 30px var(--secondary-accent-color), 0 0 40px var(--secondary-accent-color), 0 0 50px var(--secondary-accent-color), 0 0 60px var(--secondary-accent-color), 0 0 70px var(--secondary-accent-color), 0 0 80px var(--secondary-accent-color);
+        text-shadow: 0 0 10px #fff, 0 0 15px var(--secondary-accent-color), 0 0 20px var(--secondary-accent-color);
     }
 }
 
