@@ -58,11 +58,15 @@ header .container {
 }
 
 .logo {
-    font-family: var(--font-secondary);
     font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.logo span {
+    font-family: var(--font-secondary);
     font-weight: 700;
     color: var(--accent-color);
-    text-decoration: none;
     text-shadow: 0 0 5px var(--accent-color);
 }
 
