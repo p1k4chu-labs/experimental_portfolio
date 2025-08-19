@@ -3,10 +3,5 @@
   "builds": [
     { "src": "personal-notes/package.json", "use": "@vercel/next" },
     { "use": "@vercel/static" }
-  ],
-  "routes": [
-    { "src": "/personal-notes/(.*)", "dest": "/personal-notes/$1" },
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/$1" }
   ]
 }

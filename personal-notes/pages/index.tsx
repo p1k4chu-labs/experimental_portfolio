@@ -18,7 +18,7 @@ const Home = () => {
     const fetchUser = async () => {
       const { data: { session } } = await supabase.auth.getSession();
       if (!session) {
-        router.push('/personal-notes/login');
+        router.push('/login');
       } else {
         setUser(session.user);
       }
@@ -46,7 +46,7 @@ const Home = () => {
 
   const handleLogout = async () => {
     await supabase.auth.signOut();
-    router.push('/personal-notes/login');
+    router.push('/login');
   };
 
   const handleCreateNote = async (event: React.FormEvent<HTMLFormElement>) => {
