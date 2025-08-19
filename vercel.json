@@ -1,22 +1,12 @@
 {
   "version": 2,
   "builds": [
-    {
-      "src": "personal-notes/package.json",
-      "use": "@vercel/next"
-    }
+    { "src": "personal-notes/package.json", "use": "@vercel/next" },
+    { "use": "@vercel/static" }
   ],
   "routes": [
-    {
-      "src": "/personal-notes/(.*)",
-      "dest": "/personal-notes/$1"
-    },
-    {
-      "handle": "filesystem"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
+    { "src": "/personal-notes/(.*)", "dest": "/personal-notes/$1" },
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/$1" }
   ]
 }
