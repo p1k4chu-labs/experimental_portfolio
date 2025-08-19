@@ -5,5 +5,15 @@
       "src": "personal-notes/package.json",
       "use": "@vercel/next"
     }
+  ],
+  "routes": [
+    {
+      "src": "/personal-notes/(.*)",
+      "dest": "/personal-notes/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
   ]
 }
